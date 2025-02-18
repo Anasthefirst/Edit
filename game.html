@@ -4,27 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loading</title>
-  <link rel="shortcut icon" type="image/png" href="https://avatars.githubusercontent.com/u/160253176?v=4&size=64">
+  <title>game</title>
+  <link rel="shortcut icon" type="image/png" href="https://example.com/newimage.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap">
   <style>
     body {
       font-family: 'Varela Round', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000;
-      color: #fff;
+      background-color: #111;
+      color: #333;
     }
 
     header {
-      background-color: #343a40;
-      color: #fff;
+      background-color: #1a1a1a;
+      color: #333;
       padding: 10px 20px;
       text-align: center;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     .logo {
@@ -38,8 +38,8 @@
       margin: 100px auto 0 auto;
       padding: 20px;
       text-align: center;
-      background: #000;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: #111;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       border-radius: 8px;
     }
 
@@ -48,15 +48,17 @@
       margin-bottom: 10px;
       padding: 10px;
       font-size: 16px;
-      border: 1px solid #ced4da;
+      border: 1px solid #444;
       border-radius: 4px;
       width: 100%;
+      background-color: #222;
+      color: #555;
     }
 
     button {
       font-family: 'Varela Round', sans-serif;
-      background-color: #00ff00;
-      color: #000;
+      background-color: #333;
+      color: #666;
       border: none;
       padding: 10px 20px;
       font-size: 16px;
@@ -67,7 +69,7 @@
     }
 
     button:hover {
-      background-color: #0056b3;
+      background-color: #111;
     }
 
     .overlay {
@@ -76,20 +78,20 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgba(0, 0, 0, 1);
       display: none;
       justify-content: center;
       align-items: center;
       z-index: 9999;
-      color: #fff;
+      color: #333;
       font-size: 24px;
       user-select: none;
       flex-direction: column;
     }
 
     .spinner {
-      border: 6px solid rgba(255, 255, 255, 0.3);
-      border-top: 6px solid #fff;
+      border: 6px solid rgba(0, 0, 0, 0.3);
+      border-top: 6px solid #333;
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -110,19 +112,19 @@
     #killExtensionText {
       display: none;
       margin-top: 20px;
-      color: #333;
+      color: #555;
       font-size: 18px;
       text-align: center;
-      background: #000;
+      background: #111;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
 
     #killButton {
       display: none;
-      background-color: #dc3545;
-      color: #fff;
+      background-color: #444;
+      color: #666;
       border: none;
       padding: 10px 20px;
       font-size: 16px;
@@ -132,12 +134,12 @@
     }
 
     #killButton:hover {
-      background-color: #9c1c28;
+      background-color: #222;
     }
 
     footer {
-      background-color: #343a40;
-      color: #fff;
+      background-color: #1a1a1a;
+      color: #333;
       text-align: center;
       padding: 10px;
       position: fixed;
@@ -146,7 +148,7 @@
     }
 
     footer a {
-      color: #007bff;
+      color: #444;
       text-decoration: none;
     }
 
@@ -158,47 +160,47 @@
 
 <body>
   <div class="container">
-    <label for="iframeSelect" id="labelForIframeSelect">Select Extention:</label>
+    <label for="iframeSelect" id="labelForIframeSelect">Gibberish text:</label>
     <select id="iframeSelect">
     </select>
-    <label for="iframeCountSlider" id="labelForIframeSlider" style="margin-top: 20px;"></label>
-  	<div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; visibility: hidden">
-  		<input type="range" id="iframeCountSlider" min="100" max="3000" value="2000" step="100" style="visibiliy: hidden;">
-  		<span id="iframeCountValue">3000</span>
-	</div>
-    <button onclick="warning();" id="hangButton">Initiate (This may freeze your Chromebook for up to 3 minutes)</button>
-	  <br><br>If this takes longer than 2-3 minutes, please restart your Chromebook using RELOAD-POWERBUTTON
-    <button id="killButton" onclick="openExtensionPopup();">Finish</button>
+    <label for="iframeCountSlider" id="labelForIframeSlider" style="margin-top: 20px;">Gibberish text:</label>
+    <div style="display: flex; align-items: center; gap: 10px; margin: 10px 0; visibility: hidden">
+      <input type="range" id="iframeCountSlider" min="100" max="3000" value="2000" step="100" style="visibiliy: hidden;">
+      <span id="iframeCountValue">Gibberish text</span>
+    </div>
+    <button onclick="warning();" id="hangButton">Gibberish text</button>
+    <br><br>Gibberish text
+    <button id="killButton" onclick="openExtensionPopup();">Gibberish text</button>
   </div>
 
   <div class="overlay" id="overlay">
     <div class="spinner"></div>
-    Please wait...
+    Gibberish text...
   </div>
-  <div id="killExtensionText" style="color:fff"></div>
+  <div id="killExtensionText" style="color:fff">Gibberish text</div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.getElementById("iframeCountSlider");
-    const sliderValueDisplay = document.getElementById("iframeCountValue");
-    const deviceMemory = navigator.deviceMemory || 8; // It will be set to 8gb if you're in the data url, since navigator isnt supported.
-    const defaultIframeCount = Math.round(deviceMemory * 500);  // This changes the default value of the iframe slider based on how much memory your computer has
-    const maxIframeCount = Math.round(deviceMemory * 1500);
+      const slider = document.getElementById("iframeCountSlider");
+      const sliderValueDisplay = document.getElementById("iframeCountValue");
+      const deviceMemory = navigator.deviceMemory || 8; // It will be set to 8gb if you're in the data url, since navigator isnt supported.
+      const defaultIframeCount = Math.round(deviceMemory * 500);  // This changes the default value of the iframe slider based on how much memory your computer has
+      const maxIframeCount = Math.round(deviceMemory * 1500);
 
-    slider.value = defaultIframeCount;
-    slider.max = maxIframeCount;
-    sliderValueDisplay.textContent = defaultIframeCount;
+      slider.value = defaultIframeCount;
+      slider.max = maxIframeCount;
+      sliderValueDisplay.textContent = defaultIframeCount;
 
-    slider.addEventListener("input", function () {
-      sliderValueDisplay.textContent = this.value;
+      slider.addEventListener("input", function () {
+        sliderValueDisplay.textContent = this.value;
+      });
     });
-  });
-  
-  	document.getElementById("iframeCountSlider").addEventListener("input", function () {
-  	  const iframeCountValue = document.getElementById("iframeCountValue");
- 	  iframeCountValue.textContent = this.value;
+
+    document.getElementById("iframeCountSlider").addEventListener("input", function () {
+      const iframeCountValue = document.getElementById("iframeCountValue");
+      iframeCountValue.textContent = this.value;
     });
-  
+
     async function checkExtensionURL(url) {
       try {
         const response = await fetch(url);
@@ -215,8 +217,8 @@
     async function populateSelectOptions() {
       const selectElement = document.getElementById("iframeSelect");
       const extensions = {
-	"Securly (1st ID)": "chrome-extension://joflmkccibkooplaeoinecjbmdebglab/fonts/Metropolis.css",
-	"Securly (2nd ID)": "chrome-extension://ckecmkbnoanpgplccmnoikfmpcdladkc/fonts/Metropolis.css",
+        "Securly (1st ID)": "chrome-extension://joflmkccibkooplaeoinecjbmdebglab/fonts/Metropolis.css",
+        "Securly (2nd ID)": "chrome-extension://ckecmkbnoanpgplccmnoikfmpcdladkc/fonts/Metropolis.css",
         "Securly (old)": "chrome-extension://iheobagjkfklnlikgihanlhcddjoihkg/fonts/Metropolis.css",
         "GoGuardian": "chrome-extension://haldlgldplgnggkjaafhelgiaglafanh/youtube_injection.js",
         "LANSchool": "chrome-extension://baleiojnjpgeojohhhfbichcodgljmnj/blocked.html",
@@ -247,7 +249,7 @@
         "Lockdown Browser": "chrome-extension://fogjeanjfbiombghnmkmmophfeccjdki/manifest.json",
         "Linewize (CRX)": "chrome-extension://ifinpabiejbjobcphhaomiifjibpkjlf/background/assets/pages/default-blocked.html",
         "Borderless Classroom Student": "chrome-extension://kdpgkligilplaanoablcpjahjjeghcl/pages/blockPage.html",
-	"LockDown Browser AP Classroom Edition": "chrome-extension://djpknfecbncogekjnjppojlaipeobkmo/assets/images/icon_128.png",
+        "LockDown Browser AP Classroom Edition": "chrome-extension://djpknfecbncogekjnjppojlaipeobkmo/assets/images/icon_128.png",
       };
 
       let hasSupportedExtensions = false;
@@ -306,7 +308,7 @@
       setTimeout(function () {
         popup.close();
         const killExtensionText = document.getElementById("killExtensionText");
-        killExtensionText.innerHTML = "Press the button to finish!";
+        killExtensionText.innerHTML = "Gibberish text";
         setTimeout(function () {
           overlay.style.display = "none";
           killExtensionText.style.display = "block";
